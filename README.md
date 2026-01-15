@@ -20,3 +20,16 @@ curl -Ls https://raw.githubusercontent.com/NonagonWorkshop/Polygon-Policy-Editor
 
 NOTE: This is only temporary and the Policy Editor will go away on your next Restart / Reboot (sudo reboot)! 
 If you want to make it permanent please proceed the the next set of instructions.
+
+Executing Polygon for permanent use:
+
+Step 1: Make sure you are in Developer Mode
+
+Step 2: Enter the VT2 Shell (Control + ALT + F2)
+
+Step 3: Login is as root
+
+Step 3: Execute the Polygon RootFS Command:
+
+```
+curl -Ls 
