@@ -40,6 +40,8 @@ Once the PolygonRootFS script is executed successfully, reboot your computer (su
 
 If you already have RootFS Disabled, then you are not required to run the Polygon RootFS Disabler.
 
+HEADS UP, PLEASE READ! A Policy Editor cannot re-enroll your device, re-enrollment happens through firmware based crap, bascily at a TMP Level, the only way that would happen is from running a completely different command mean't to enroll your device, or by doig it manually by clicking the obvious "enroll device" button when you first sign into your chromebook. Most Policy Editors can't even modify device level policies, and it is VERY VERY unlikely a Policy Editor would trigger an enrollment process. All a Policy Editor does is edit the Policy.json file / delete it and create a modified version. This for anyone that thinks a Policy Editor can enroll your device..
+
 >[!Warning]
  
  **WE ARE NOT RESPONSIBLE FOR ANY DAMAGES OR ISSUES THIS CAUSES TO YOUR DEVICE, NOR IS MERCURYWORKSHOP.**
