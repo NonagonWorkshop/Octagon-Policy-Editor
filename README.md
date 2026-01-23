@@ -42,6 +42,8 @@ If you already have RootFS Disabled, then you are not required to run the Polygo
 
 HEADS UP, PLEASE READ! A Policy Editor cannot re-enroll your device, re-enrollment happens through firmware based crap, basicly at a TMP Level, the only way re-enrollment would happen is from running a completely different command mean't to enroll your device, or by doing it manually by clicking the obvious "enroll device" button when you first sign into your chromebook. Most Policy Editors can't even modify device level policies, and it is VERY VERY unlikely a Policy Editor would trigger an enrollment process. All a Policy Editor does is edit the Policy.json file / delete it and create a modified version. This for anyone that thinks a Policy Editor can enroll your device.. Information and binary related to enrollment is managed through your TMP Chip in your chromebook, (At a "TMP" level as i said) or through the Admin Console your local SyS / IT Admin uses.
 
+Made by: JohnDoe and made in part by StarkMist111960
+
 >[!Warning]
  
  **WE ARE NOT RESPONSIBLE FOR ANY DAMAGES OR ISSUES THIS CAUSES TO YOUR DEVICE, NOR IS MERCURYWORKSHOP.**
