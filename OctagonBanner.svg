@@ -1,0 +1,68 @@
+<svg viewBox="0 0 1200 320" xmlns="http://www.w3.org/2000/svg">
+  <!-- Dark background -->
+  <rect width="1200" height="320" fill="#1a1d29"/>
+
+  <!-- Octagon icon with geometric pattern -->
+  <g transform="translate(160, 160)">
+    <!-- Outer octagon -->
+    <polygon
+      points="
+        0,-90
+        63.64,-63.64
+        90,0
+        63.64,63.64
+        0,90
+        -63.64,63.64
+        -90,0
+        -63.64,-63.64
+      "
+      fill="none"
+      stroke="#f97316"
+      stroke-width="8"
+    />
+
+    <!-- Inner octagon -->
+    <polygon
+      points="
+        0,-60
+        42.43,-42.43
+        60,0
+        42.43,42.43
+        0,60
+        -42.43,42.43
+        -60,0
+        -42.43,-42.43
+      "
+      fill="#f97316"
+      opacity="0.3"
+    />
+
+    <!-- Center triangle pointing up -->
+    <polygon
+      points="0,-40 34.64,20 -34.64,20"
+      fill="#f97316"
+    />
+
+    <!-- Small decorative elements at vertices -->
+    <circle cx="0" cy="-90" r="6" fill="#fdba74"/>
+    <circle cx="63.64" cy="-63.64" r="6" fill="#fdba74"/>
+    <circle cx="90" cy="0" r="6" fill="#fdba74"/>
+    <circle cx="63.64" cy="63.64" r="6" fill="#fdba74"/>
+    <circle cx="0" cy="90" r="6" fill="#fdba74"/>
+    <circle cx="-63.64" cy="63.64" r="6" fill="#fdba74"/>
+    <circle cx="-90" cy="0" r="6" fill="#fdba74"/>
+    <circle cx="-63.64" cy="-63.64" r="6" fill="#fdba74"/>
+  </g>
+
+  <!-- "Octagon" text -->
+  <text
+    x="370"
+    y="210"
+    font-family="Arial, sans-serif"
+    font-size="140"
+    font-weight="bold"
+    fill="#f97316"
+  >
+    Octagon
+  </text>
+</svg>
