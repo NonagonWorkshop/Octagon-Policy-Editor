@@ -2,32 +2,32 @@
 
 #################################################################################
 # Octagon Policy Editor
-# Heavily based off of Pollen Policy Editor and Pentagon Policy Editor
+# Heavily based on Pollen Policy Editor and Pentagon Policy Editor
 # https://github.com/MercuryWorkshop/Pollen/
 # https://github.com/NonagonWorkshop/Pentagon-Policy-Editor/
 #################################################################################
 
 clear
 
-echo "=========================================="
-echo "  Welcome to Octagon Policy Editor"
-echo "=========================================="
-echo ""
-echo "Heavily based off of:"
-echo "  • Pollen Policy Editor"
-echo "    https://github.com/MercuryWorkshop/Pollen/"
-echo "  •  RIP Pentagon Policy Editor"
-echo "    https://github.com/NonagonWorkshop/Pentagon-Policy-Editor/"
-echo "Made by GamerRyker and StarkMist111960, Combines the best of Polygon and Pentagon"
-echo "=========================================="
+echo "==========================================
+        Welcome to Octagon Policy Editor.
+      ==========================================
+
+      Heavily based on:
+       • Pollen Policy Editor.
+          https://github.com/MercuryWorkshop/Pollen/
+       •  RIP Pentagon Policy Editor.
+          https://github.com/NonagonWorkshop/Pentagon-Policy-Editor/
+      Made by GamerRyker, sorry, ClaudeAI, and StarkMist111960. It combines the best of Polygon and Pentagon
+      =========================================="
 echo ""
 
 echo 'Default Selection: '
-echo "  • GoGuardian"
-echo "  • GoGuardian License"
-echo "  • Snap&Read"
-echo "  • CoWriter"
-echo "  • Read&Write"
+echo   "• GoGuardian
+        • GoGuardian License.
+        • Snap&Read
+        • CoWriter
+        • Read&Write"
 echo '"Ids and other info: haldlgldplgnggkjaafhelgiaglafanh;https://goguardian.com/ext/m.xml,"jjfeehgdeghiknkilcildnjofkcndjcm;https://goguardian.com/licenses/update.php","mloajfnmjckfjbeeofcdaecbelnblden;https://clients2.google.com/service/update2/crx","ifajfiofeifbbhbionejdliodenmecna;https://clients2.google.com/service/update2/crx","inoeonmfapjbbkmdafoankkfajkcphgd;https://clients2.google.com/service/update2/crx"'
 echo ''
 read -p 'Enter desired extension URLs (leave blank for default selection): ' EXT_LIST
@@ -111,13 +111,13 @@ cat > /etc/opt/chrome/policies/managed/polygon_policy.json << EOF
 }
 EOF
 
-echo "[✓] Policies configured successfully!"
-echo ""
-echo "Extensions force-installed:"
-echo $EXT_LIST
-echo ""
-echo "User policies modified (50+ policies changed)"
-echo ""
-echo "Done! Policies have been applied."
-echo "Visit chrome://policy and reload your policies"
+echo "[✓] Policies configured successfully!
+
+     Extensions force-installed: 
+     $EXT_LIST
+
+     User policies modified (50+ policies changed)
+
+      Done! Policies have been applied.
+      Visit chrome://policy and reload your policies!"
 echo ""

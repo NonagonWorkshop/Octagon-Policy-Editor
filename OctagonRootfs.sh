@@ -8,21 +8,21 @@
 
 clear
 
-echo "=========================================="
-echo "  Welcome to Octagon RootFS Disabler"
-echo "=========================================="
-echo ""
-echo "This will disable RootFS verification to make"
-echo "policy changes permanent across reboots."
-echo ""
-echo "⚠️  WARNING:"
-echo "  • Your Chromebook will soft-brick if you"
-echo "    re-enter verified mode after this!"
-echo "  • Only proceed if you understand the risks and have atleast one braincell"
-echo ""
-echo "=========================================="
-echo ""
-echo "[*] Disabling RootFS verification..."
+echo "==========================================
+        Welcome to Octagon RootFS Disabler
+      ==========================================
+
+      This will disable RootFS verification to make
+      Policy changes are permanent across reboots.
+
+       ⚠️  WARNING:
+        • Your Chromebook will soft-brick if you
+          re-enter verified mode after this!
+        • Only proceed if you understand the risks and have at least one brain cell
+
+      ==========================================
+
+      [*] Disabling RootFS verification..."
 echo ""
 
 # Disable RootFS verification on both partitions
@@ -42,17 +42,17 @@ else
 
 fi 
 
-echo 'if you recieve an error saying something like "cannot find required file /dev/mmcblk0" you may need to download or open this file and change the command to match your specific needs, thank you for using Pentgon Policy Editor RootFS disable'
+echo 'if you receive an error saying something like "cannot find required file /dev/mmcblk0" you may need to download or open this file and change the command to match your specific needs, thank you for using Pentgon Policy Editor RootFS disable.'
 
 echo ""
-echo "[✓] RootFS verification disabled!"
-echo ""
-echo "=========================================="
-echo ""
-echo "NEXT STEPS:"
-echo "  1. Reboot your Chromebook: sudo reboot"
-echo "  2. After reboot, run the Polygon Policy Editor Command"
-echo "  3. Changes will now be permanent!"
-echo ""
-echo "=========================================="
+echo "[✓] RootFS verification disabled!
+
+      ==========================================
+
+        NEXT STEPS:
+        1. Reboot your Chromebook: sudo reboot.
+        2. After reboot, run the Polygon Policy Editor Command.
+        3. Changes will now be permanent!
+
+      =========================================="
 echo ""
