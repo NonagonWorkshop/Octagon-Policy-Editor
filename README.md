@@ -44,4 +44,4 @@ Made by: GamerRyker & StarkMist111960
 >**WE ARE NOT RESPONSIBLE FOR ANY DAMAGES OR ISSUES THIS CAUSES TO YOUR DEVICE, NOR IS MERCURYWORKSHOP.**
 
 
-This is to my friend who took everything from Octagon, and so called "Updated" it, to have no "AI Slop". If you seriously think grammar and using a bunch of echos means you used AI, then you should really consider taking some coding classes. For anyone wanting to check out the "No AI Slop" version, go ahead and look at the commmits: All that was really "Updated" were the echos and what he thinks is "grammar". (All he really did was change "based off of" to "based on".. 
+This is to my friend who took everything from Octagon, and so called "Updated" it, to have no "AI Slop". If you seriously think grammar and using a bunch of echos means you used AI, then you should really consider taking some coding classes. For anyone wanting to check out the "No AI Slop" version, go ahead and look at the commits: All that was really "Updated" were the echos and what he thinks is "grammar". (All he really did was change "based off of" to "based on".. 
