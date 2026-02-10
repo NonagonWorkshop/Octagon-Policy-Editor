@@ -40,7 +40,7 @@ fi
 mkdir -p /etc/opt/chrome/policies/managed
 
 # Create the policy JSON file
-cat > /etc/opt/chrome/policies/managed/polygon_policy.json << EOF
+cat > /etc/opt/chrome/policies/managed/octagon.json << EOF
 {
   "SecondaryGoogleAccountSigninAllowed": true,
   "URLBlocklist": [],
