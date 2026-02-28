@@ -1,4 +1,4 @@
-![OctagonBanner](./OctagonBanner.svg)
+
 # Octagon Policy Editor
 
 Welcome to Octagon Policy Editor!
