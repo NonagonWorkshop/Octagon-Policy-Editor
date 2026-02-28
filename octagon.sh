@@ -1,45 +1,50 @@
 #!/bin/bash
-
 #################################################################################
 # Octagon Policy Editor
 # Heavily based off of Pollen Policy Editor and Pentagon Policy Editor
 # https://github.com/MercuryWorkshop/Pollen/
 # https://github.com/NonagonWorkshop/Pentagon-Policy-Editor/
 #################################################################################
-
 clear
 
-echo "=========================================="
-echo "  Welcome to Octagon Policy Editor"
-echo "=========================================="
-echo ""
-echo "Heavily based off of:"
-echo "  • Pollen Policy Editor"
-echo "    https://github.com/MercuryWorkshop/Pollen/"
-echo "  •  RIP Pentagon Policy Editor"
-echo "    https://github.com/NonagonWorkshop/Pentagon-Policy-Editor/"
-echo "Made by GamerRyker and StarkMist111960, Combines the best of Polygon and Pentagon"
-echo "=========================================="
-echo ""
+cat << "BANNER"
 
-echo 'Default Selection: '
-echo "  • GoGuardian"
-echo "  • GoGuardian License"
-echo "  • Snap&Read"
-echo "  • CoWriter"
-echo "  • Read&Write"
-echo '"Ids and other info: haldlgldplgnggkjaafhelgiaglafanh;https://goguardian.com/ext/m.xml,"jjfeehgdeghiknkilcildnjofkcndjcm;https://goguardian.com/licenses/update.php","mloajfnmjckfjbeeofcdaecbelnblden;https://clients2.google.com/service/update2/crx","ifajfiofeifbbhbionejdliodenmecna;https://clients2.google.com/service/update2/crx","inoeonmfapjbbkmdafoankkfajkcphgd;https://clients2.google.com/service/update2/crx"'
-echo ''
-read -p 'Enter desired extension URLs (leave blank for default selection): ' EXTENSION_LIST
-if [[ $EXTENSION_LIST -eq '' ]]; then 
-# Build extension force-install shit, recently added Read&Write updates btw
+        Welcome to Octagon
+
+   000  000 TTTTT  AA   GGG   000  NNN  N
+  0  0 0  0   T   A  A G     0  0  N NN N
+  0  0 0  0   T   AAAA G GGG 0  0  N  NNN
+  0  0 0  0   T   A  A G   G 0  0  N   NN
+   000  000   T   A  A  GGG   000  N    N
+
+          POLICY EDITOR
+
+Heavily based off of:
+   Pollen Policy Editor
+    https://github.com/MercuryWorkshop/Pollen/
+   Pentagon Policy Editor
+    https://github.com/NonagonWorkshop/Pentagon-Policy-Editor/
+
+Made by GamerRyker and StarkMist111960
+Combines the best of Polygon and Pentagon
+
+Enter extension IDs in format:
+id1;url1,id2;url2,id3;url3
+
+Leave blank for the default selection: (GoGuardian,  GoGuardian License, Snap&Read, CoWriter, Read&Write)
+
+BANNER
+
+read -p 'Extension URLs: ' EXTENSION_LIST
+
+if [[ -z "$EXTENSION_LIST" ]]; then 
     EXTENSION_LIST='"haldlgldplgnggkjaafhelgiaglafanh;https://goguardian.com/ext/m.xml","jjfeehgdeghiknkilcildnjofkcndjcm;https://goguardian.com/licenses/update.php","mloajfnmjckfjbeeofcdaecbelnblden;https://clients2.google.com/service/update2/crx","ifajfiofeifbbhbionejdliodenmecna;https://clients2.google.com/service/update2/crx","inoeonmfapjbbkmdafoankkfajkcphgd;https://clients2.google.com/service/update2/crx"'
 fi
 
-# Create policy directory if needed
+EXT_LIST="$EXTENSION_LIST"
+
 mkdir -p /etc/opt/chrome/policies/managed
 
-# Create the policy JSON file
 cat > /etc/opt/chrome/policies/managed/octagon.json << EOF
 {
   "SecondaryGoogleAccountSigninAllowed": true,
@@ -48,6 +53,7 @@ cat > /etc/opt/chrome/policies/managed/octagon.json << EOF
   "EditBookmarksEnabled": true,
   "ChromeOsMultiProfileUserBehavior": "unrestricted",
   "DeveloperToolsAvailability": 1,
+  "QuickUnlockModeAllowlist": ["all"],
   "DefaultPopupsSetting": 1,
   "AllowDeletingBrowserHistory": true,
   "AllowDinosaurEasterEgg": true,
@@ -56,7 +62,7 @@ cat > /etc/opt/chrome/policies/managed/octagon.json << EOF
   "ExtensionAllowedTypes": null,
   "ExtensionInstallAllowlist": null,
   "ExtensionInstallBlocklist": null,
-  "ExtensionInstallForcelist": [$EXT_LIST],
+  "ExtensionInstallForcelist": [$EXTENSION_LIST],
   "ExtensionSettings": null,
   "PasswordManagerEnabled": true,
   "TaskManagerEndProcessEnabled": true,
@@ -107,17 +113,20 @@ cat > /etc/opt/chrome/policies/managed/octagon.json << EOF
   "NetworkPredictionOptions": 0,
   "AllowedDomainsForApps": "",
   "DeviceUserAllowlist": "",
-  "DeviceAllowNewUser": 1
+  "DeviceAllowNewUser": 3
 }
 EOF
 
-echo "[✓] Policies configured successfully!"
-echo ""
-echo "Extensions force-installed:"
-echo $EXTENSION_LIST
-echo ""
-echo "User policies modified (50+ policies changed)"
-echo ""
-echo "Done! Policies have been applied."
-echo "Visit chrome://policy and reload your policies"
-echo ""
+cat << SUCCESS
+
+[✓] Policies configured successfully!
+
+Extensions force-installed:
+$EXT_LIST
+
+User policies modified successfully!
+
+Done! Policies have been applied.
+Visit chrome://policy and reload your policies
+
+SUCCESS
