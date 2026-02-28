@@ -28,10 +28,7 @@ Heavily based off of:
 Made by GamerRyker and StarkMist111960
 Combines the best of Polygon and Pentagon
 
-Enter extension IDs in format:
-id1;url1,id2;url2,id3;url3
-
-Leave blank for the default selection: (GoGuardian,  GoGuardian License, Snap&Read, CoWriter, Read&Write)
+ Default force-installed extensions: (GoGuardian, GoGuardian License, Snap&Read, CoWriter, Read&Write)
 
 BANNER
 
