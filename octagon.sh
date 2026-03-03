@@ -12,9 +12,9 @@ cat << "BANNER"
         Welcome to Octagon
 
    000  000 TTTTT  AA   GGG   000  NNN  N
-  0  0 0  0   T   A  A G     0  0  N NN N
-  0  0 0  0   T   AAAA G GGG 0  0  N  NNN
-  0  0 0  0   T   A  A G   G 0  0  N   NN
+  0  0 0      T   A  A G     0  0  N NN N
+  0  0 0      T   AAAA G GGG 0  0  N  NNN
+  0  0 0      T   A  A G   G 0  0  N   NN
    000  000   T   A  A  GGG   000  N    N
 
           POLICY EDITOR
