@@ -51,7 +51,7 @@ cat > /etc/opt/chrome/policies/managed/octagon.json << EOF
   "ChromeOsMultiProfileUserBehavior": "unrestricted",
   "DeveloperToolsAvailability": 1,
   "QuickUnlockModeAllowlist": ["all"],
-  "OsColorMode": dark
+  "OsColorMode": ["dark"]
   "DefaultPopupsSetting": 1,
   "AllowDeletingBrowserHistory": true,
   "AllowDinosaurEasterEgg": true,
