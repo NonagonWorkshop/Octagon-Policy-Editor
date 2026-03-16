@@ -51,7 +51,7 @@ cat > /etc/opt/chrome/policies/managed/octagon.json << EOF
   "ChromeOsMultiProfileUserBehavior": "unrestricted",
   "DeveloperToolsAvailability": 1,
   "QuickUnlockModeAllowlist": ["all"],
-  "OsColorMode": ["dark"]
+  "OsColorMode": ["dark"],
   "DefaultPopupsSetting": 1,
   "AllowDeletingBrowserHistory": true,
   "AllowDinosaurEasterEgg": true,
@@ -93,11 +93,10 @@ cat > /etc/opt/chrome/policies/managed/octagon.json << EOF
   "PhoneHubAllowed": true,
   "LacrosAvailability": "user_choice",
   "WallpaperImage": null,
+  "ArcEnabled": true,
   "ArcPolicy": {
-    "playStoreMode": "ENABLED",
-    "installType": "FORCE_INSTALLED",
-    "playEmmApiInstallDisabled": false,
-    "dpsInteractionsDisabled": false
+    "playStoreMode": "WHITELIST",
+    "applications": []
   },
   "DnsOverHttpsMode": "automatic",
   "BrowserLabsEnabled": true,
