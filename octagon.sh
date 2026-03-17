@@ -95,8 +95,14 @@ cat > /etc/opt/chrome/policies/managed/octagon.json << EOF
   "WallpaperImage": null,
   "ArcEnabled": true,
   "ArcPolicy": {
-    "playStoreMode": "WHITELIST",
-    "applications": []
+    "applications": [],
+    "playStoreMode": "ENABLED",
+    "availableAppSetPolicy": "ALL",
+    "playLocalPolicyEnabled": true,
+    "statusReportingSettings": {
+      "applicationReportsEnabled": true,
+      "softwareInfoEnabled": true
+    }
   },
   "DnsOverHttpsMode": "automatic",
   "BrowserLabsEnabled": true,
