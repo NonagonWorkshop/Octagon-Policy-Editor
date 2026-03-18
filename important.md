@@ -7,6 +7,9 @@ Meaning if SecondaryAccountUseEnabled is set to false by default, and that Polic
 
 If you notice a specific Policy that is not added to the json list on the Octagon.sh file please let me know and i will add it to the list. Please also specify if it's a policy that should be set to true / enabled or false / disabled.
 
+UPDATE: (Updated policies)
+I have recently added network configuration to the policy json list. These networks are apart of our management. It is highly recommended that you fork octagon, and either remove the networkconfig policy, or update it with your own network information. Removing the networkconfig polcy won't effect your wifi settings at all.
+
 UPDATE: Use of (RootFS)
 The Octagon RootFS Disabler will execute a command that should disable RootFS on both partitions 2 & 4, if it fails to do so, and gives an error about you needing "Developer Firmware", and or wants you to confirm you want to disable RootFS by executing the same command with an extra line, please execute the following commands:
 
