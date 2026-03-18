@@ -65,6 +65,8 @@ sudo chattr +i /etc/opt/chrome/policies/managed/
 
 If you run that command before running the octagon policy editor command, octagon won't be able to write it's own policy json file.
 
+Now your done! The only json file that will stay and remain is the octagon.json file. Now your won't have to worry about another policy.json file being created that updated octagon updated ones. 
+
 
 If you want to do it permanantly, if RootFS verification is not yet disabled, use the RootFS script, reboot, and then run Octagon.sh.
 
