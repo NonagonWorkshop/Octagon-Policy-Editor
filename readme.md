@@ -40,7 +40,7 @@ Some octagon set policies are being superseded by other policies and are changin
 
 Simple, this is known as a policy push cycle, and it is easily fixable:
 
-The policy push cycle basically creates a new policy json file usually called policy.json after octagon.json is created. This policy.json file has some updated policies due to octagon, and the rest are default enterprise-enforced ones that supersede and update octagon updated policies with default enterprise ones as I said.
+The policy push cycle basically creates a new policy json file usually called policy.json after octagon.json file is created. This policy.json file has some updated policies due to octagon, and the rest are default enterprise-enforced ones that supersede and update octagon updated policies with default enterprise ones as I said.
 
 In-order to fix this please follow these steps:
 
