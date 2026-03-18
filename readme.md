@@ -56,6 +56,7 @@ sudo rm -rf /etc/opt/chrome/policies/managed/policy.json
 
 **Second**, re-run the octagon policy editor command.
 
+
 **Lastly**, once you finish executing the octagon policy editor command, run the following command:
 
 ```
