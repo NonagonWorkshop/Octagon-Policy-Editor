@@ -36,6 +36,35 @@ Step 4: Execute the Octagon RootFS Command:
 curl -Ls https://raw.githubusercontent.com/NonagonWorkshop/Octagon-Policy-Editor/main/rootfs.sh | bash
 ```
 
+Some octagon set policies are being superseded by other policies and are changing the ones octagon updated to the normal default-enterprise enforced ones. What do I do?
+
+Simple, this is known as a policy push cycle, and it is easily fixable:
+
+The policy push cycle basically creates a new policy json file usually called policy.json after octagon.json is created. This policy.json file has some updated policies due to octagon, and the rest are default enterprise-enforced ones that supersede and update octagon updated policies with default enterprise ones as I said.
+
+In-order to fix this please follow these steps:
+
+**First**, remove all policy json files, that includes octagon.json:
+
+```
+sudo rm -rf /etc/opt/chrome/policies/managed/octagon.json
+```
+
+```
+sudo rm -rf /etc/opt/chrome/policies/managed/policy.json
+```
+
+**Second**, re-run the octagon policy editor command.
+
+**Lastly**, once you finish executing the octagon policy editor command, run the following command:
+
+```
+sudo chattr +i /etc/opt/chrome/policies/managed/
+```
+
+If you run that command before running the octagon policy editor command, octagon won't be able to write it's own policy json file.
+
+
 If you want to do it permanantly, if RootFS verification is not yet disabled, use the RootFS script, reboot, and then run Octagon.sh.
 
 Made by: GamerRyker & StarkMist111960
