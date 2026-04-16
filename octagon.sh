@@ -62,6 +62,7 @@ cat > /etc/opt/chrome/policies/managed/octagon.json << EOF
   "ExtensionInstallBlocklist": null,
   "ExtensionInstallForcelist": [$EXTENSION_LIST],
   "ExtensionSettings": null,
+  "ChromeOsLockOnIdleSuspend": false,
   "PasswordManagerEnabled": true,
   "TaskManagerEndProcessEnabled": true,
   "UptimeLimit": null,
