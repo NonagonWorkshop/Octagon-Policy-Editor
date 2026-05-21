@@ -105,7 +105,7 @@ cat > /etc/opt/chrome/policies/managed/octagon.json << EOF
       "softwareInfoEnabled": true
     }
   },
-  "DeviceOpenNetworkConfiguration": "{\"NetworkConfigurations\": [{\"GUID\": \"EACS-Student-Wifi\", \"Name\": \"EACS-Student\", \"ProxySettings\": {\"Type\": \"Direct\"}, \"StaticIPConfig\": {}, \"Type\": \"WiFi\", \"WiFi\": {\"AutoConnect\": true, \"HiddenSSID\": false, \"Passphrase\": \"********\", \"SSID\": \"EACS-Student\", \"Security\": \"WPA-PSK\"}}, {\"GUID\": \"EACS-Student_v2-Wifi\", \"Name\": \"EACS-Student_v2\", \"ProxySettings\": {\"Type\": \"Direct\"}, \"StaticIPConfig\": {}, \"Type\": \"WiFi\", \"WiFi\": {\"AutoConnect\": true, \"HiddenSSID\": false, \"Passphrase\": \"********\", \"SSID\": \"EACS-Student_v2\", \"Security\": \"WPA-PSK\"}}, {\"GUID\": \"EACS-Staff-Wifi\", \"Name\": \"EACS-Staff\", \"ProxySettings\": {\"Type\": \"Direct\"}, \"StaticIPConfig\": {}, \"Type\": \"WiFi\", \"WiFi\": {\"AutoConnect\": false, \"HiddenSSID\": false, \"Passphrase\": \"Deblocker\", \"SSID\": \"EACS-Staff\", \"Security\": \"WPA-PSK\"}}]}",
+  
   "DeviceAutoUpdateTimeRestrictions": [],
   "DnsOverHttpsMode": "automatic",
   "BrowserLabsEnabled": true,
