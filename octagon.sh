@@ -90,6 +90,7 @@ cat > /etc/opt/chrome/policies/managed/octagon.json << EOF
   "NearbyShareAllowed": true,
   "PinnedLauncherApps": null,
   "PrintingEnabled": true,
+  "DeviceReportNetworkEvents": false,
   "SmartLockSigninAllowed": true,
   "PhoneHubAllowed": true,
   "LacrosAvailability": "user_choice",
