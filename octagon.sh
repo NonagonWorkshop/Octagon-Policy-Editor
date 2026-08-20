@@ -121,6 +121,7 @@ cat > /etc/opt/chrome/policies/managed/octagon.json << EOF
   "AllowedDomainsForApps": "",
   "DeviceUserAllowlist": "",
   "DeviceAllowNewUser": 3
+  "SystemFeaturesDisableList": []
 }
 EOF
 
