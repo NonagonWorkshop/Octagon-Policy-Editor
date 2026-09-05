@@ -46,7 +46,6 @@ cat > /etc/opt/chrome/policies/managed/octagon.json << EOF
 {
   "SecondaryGoogleAccountSigninAllowed": true,
   "URLBlocklist": [],
-  "SystemFeaturesDisableList": [],
   "EditBookmarksEnabled": true,
   "ChromeOsMultiProfileUserBehavior": "unrestricted",
   "DeveloperToolsAvailability": 1,
@@ -58,83 +57,9 @@ cat > /etc/opt/chrome/policies/managed/octagon.json << EOF
   "IncognitoModeAvailability": 0,
   "AllowScreenLock": true,
   "ExtensionAllowedTypes": null,
-  "ExtensionInstallAllowlist": null,
-  "ExtensionInstallBlocklist": null,
-  "ExtensionInstallForcelist": [$EXTENSION_LIST],
-  "ExtensionSettings": null,
-  "ChromeOsLockOnIdleSuspend": false,
-  "PasswordManagerEnabled": true,
-  "TaskManagerEndProcessEnabled": true,
-  "UptimeLimit": null,
-  "SystemTerminalSshAllowed": true,
-  "SystemTimezone": "",
-  "IsolatedAppsDeveloperModeAllowed": true,
-  "ForceGoogleSafeSearch": false,
-  "ForceYouTubeRestrict": 0,
-  "EasyUnlockAllowed": true,
-  "DisableSafeBrowsingProceedAnyway": false,
-  "DeviceAllowNewUsers": true,
-  "DevicePowerAdaptiveChargingEnabled": true,
-  "DeviceGuestModeEnabled": true,
-  "BrowserGuestModeEnabled": true,
-  "DeviceUnaffiliatedCrostiniAllowed": true,
-  "VirtualMachinesAllowed": true,
-  "CrostiniAllowed": true,
-  "DefaultCookiesSetting": 1,
-  "VmManagementCliAllowed": true,
-  "WifiSyncAndroidAllowed": true,
-  "DeveloperToolsDisabled": false,
-  "DeviceBlockDevmode": false,
-  "UserBorealisAllowed": true,
-  "InstantTetheringAllowed": true,
-  "NearbyShareAllowed": true,
-  "PinnedLauncherApps": null,
-  "PrintingEnabled": true,
-  "DeviceReportNetworkEvents": false,
-  "SmartLockSigninAllowed": true,
-  "PhoneHubAllowed": true,
-  "LacrosAvailability": "user_choice",
-  "WallpaperImage": null,
-  "ArcEnabled": true,
-  "ArcPolicy": {
-    "applications": [],
-    "playStoreMode": "ENABLED",
-    "availableAppSetPolicy": "ALL",
-    "playLocalPolicyEnabled": true,
-    "statusReportingSettings": {
-      "applicationReportsEnabled": true,
-      "softwareInfoEnabled": true
-    }
-  },
-  
-  "DeviceAutoUpdateTimeRestrictions": [],
-  "DnsOverHttpsMode": "automatic",
-  "BrowserLabsEnabled": true,
-  "ChromeOsReleaseChannelDelegated": true,
-  "SafeSitesFilterBehavior": 0,
-  "SafeBrowsingProtectionLevel": 0,
-  "DownloadRestrictions": 0,
-  "ProxyMode": "system",
-  "ProxyServerMode": "system",
-  "NetworkThrottlingEnabled": false,
-  "NetworkPredictionOptions": 0,
-  "AllowedDomainsForApps": "",
-  "DeviceUserAllowlist": "",
-  "DeviceAllowNewUser": 3
-  "SystemFeaturesDisableList": []
-}
-EOF
-
-cat << SUCCESS
-
-[✓] Policies configured successfully!
-
-Extensions force-installed:
-$EXT_LIST
-
-User policies modified successfully!
-
-Done! Policies have been applied.
-Visit chrome://policy and reload your policies
-
-SUCCESS
+  "ExtensionInstallAllowlist": [
+  "agiednhnlghobdgpgfdnbdaflnngmoij",
+  "agpmgihmmmfkbhckmciedmhincdggomo",
+  "annfbnbieaamhaimclajlajpijgkdblo",
+  "bebmphofpgkhclocdbgomhnjcpelbenh",
+  "bgbbjohpdmpalhmje
