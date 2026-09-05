@@ -181,8 +181,6 @@ cat > /etc/opt/chrome/policies/managed/octagon.json << EOF
   "ReportAppInventory": [],
   "ReportAppUsage": [],
 
-  "AssistantOnboardingMode": "default",
-  "BrowserGuestModeEnabled": true,
   "LacrosSecondaryProfilesAllowed": true,
   "LacrosSelection": "user_choice",
 
