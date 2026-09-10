@@ -151,8 +151,6 @@ cat > /etc/opt/chrome/policies/managed/octagon.json << EOF
   "PrintingEnabled": true,
   "SmartLockSigninAllowed": true,
   "PhoneHubAllowed": true,
-  "LacrosAvailability": "user_choice",
-  "LacrosSelection": 'user_choice",
   "BrowserGuestModeEnabled": true,
   "WallpaperImage": null,
 
