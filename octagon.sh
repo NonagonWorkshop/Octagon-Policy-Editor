@@ -181,7 +181,6 @@ cat > /etc/opt/chrome/policies/managed/octagon.json << EOF
   "ReportAppInventory": [],
   "ReportAppUsage": [],
 
-  "AssistantOnboardingMode": "default",
 
   "ManagedBookmarks": [
     { "toplevel_name": "Staff Bookmarks" },
