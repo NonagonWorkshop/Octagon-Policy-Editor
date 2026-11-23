@@ -25,8 +25,7 @@ Heavily based off of:
    Pentagon Policy Editor
     https://github.com/NonagonWorkshop/Pentagon-Policy-Editor/
 
-Made by GamerRyker and StarkMist111960
-Combines the best of Polygon and Pentagon
+Made by GamerRyker
 
  Default force-installed extensions: (GoGuardian, GoGuardian License, Snap&Read, CoWriter, Read&Write)
 
