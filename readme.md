@@ -70,7 +70,7 @@ Now you're done! The only JSON file that will stay and remain is the octagon.jso
 
 If you want to use Octagon permanently, and RootFS verification is not yet disabled, use the RootFS script, reboot, and then run Octagon.sh.
 
-Made by: GamerRyker & StarkMist111960
+Made by: GamerRyker
 
 >[!Warning]
 >**WE ARE NOT RESPONSIBLE FOR ANY DAMAGES OR ISSUES THIS CAUSES TO YOUR DEVICE, NOR IS MERCURYWORKSHOP.**
